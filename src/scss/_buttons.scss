@@ -7,14 +7,24 @@
    border-radius: 4px;
    padding: 10px 40px;
    font-size: sizes.$button-font-size;
+   cursor: pointer;
+   transition: all 0.25s ease-in-out;
    &-primary {
       @extend .btn;
       background-color: transparent;
       color: colors.$primary-color;
+      &:hover {
+         background-color: colors.$bg-tertiary;
+         color: colors.$secondary-color;
+      }
    }
    &-secondary {
       @extend .btn;
       background-color: colors.$bg-tertiary;
       color: colors.$secondary-color;
+      &:hover {
+         background-color: transparent;
+         color: colors.$primary-color;
+      }
    }
 }
