@@ -10,3 +10,24 @@
       }
    }
 }
+
+@media screen and (max-width: breakPoints.$small-screen) {
+   #header {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-block: 2em;
+
+      .links {
+         gap: 1em;
+         a {
+            width: 100%;
+            text-align: center;
+         }
+      }
+      .action {
+         margin: auto;
+         margin-top: 2rem;
+      }
+   }
+}
