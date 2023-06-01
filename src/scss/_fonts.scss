@@ -1,14 +1,12 @@
-$heading-font: 'Cardo';
-$regular-text-font: 'Lato';
-
-$regular-text-title-font-size: 1.2rem;
-$regular-text-font-size: 1rem;
+@use './variables/colors';
+@use './variables/fonts';
+@use './variables/sizes';
 
 * {
-   font-family: $regular-text-font;
+   font-family: fonts.$regular-text-font;
 }
 .title {
-   font-family: $heading-font;
+   font-family: fonts.$heading-font;
    font-weight: bold;
    &-big {
       @extend .title;
@@ -24,11 +22,18 @@ $regular-text-font-size: 1rem;
    }
 }
 p {
-   font-family: $regular-text-font;
-   font-size: $regular-text-font-size;
+   font-family: fonts.$regular-text-font;
+   font-size: sizes.$regular-text-font-size;
    font-weight: normal;
    &.regular-text-title {
-      font-size: $regular-text-title-font-size;
+      font-size: sizes.$regular-text-title-font-size;
       font-weight: bold;
    }
+}
+
+.light-text {
+   color: colors.$primary-color;
+}
+.dark-text {
+   color: colors.$secondary-color;
 }
