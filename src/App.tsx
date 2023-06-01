@@ -7,12 +7,14 @@ import React from 'react'
 
 const App = () => {
    return (
-      <div className="App bg-primary">
-         <h1 className="title-big bg-secondary">Lorem</h1>
-         <h2 className="title-medium bg-tertiary">Lorem</h2>
-         <h3 className="title-small">Lorem</h3>
-         <p className="regular-text-title">Lorem</p>
-         <p>Lorem</p>
+      <div className="App">
+         <button className="btn-primary" style={{ margin: '5px' }}>
+            Contact Us
+         </button>
+         <button className="btn-secondary">Reserve Ticket</button>
+         {/* header */}
+         {/* main */}
+         {/* footer */}
       </div>
    )
 }
