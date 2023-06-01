@@ -1,6 +1,34 @@
-$heading-font: 'Lato';
-$text-font: 'Cardo';
+$heading-font: 'Cardo';
+$regular-text-font: 'Lato';
+
+$regular-text-title-font-size: 1.2rem;
+$regular-text-font-size: 1rem;
 
 * {
-   font-family: $text-font;
+   font-family: $regular-text-font;
+}
+.title {
+   font-family: $heading-font;
+   font-weight: bold;
+   &-big {
+      @extend .title;
+      font-size: 4rem;
+   }
+   &-medium {
+      @extend .title;
+      font-size: 3rem;
+   }
+   &-small {
+      @extend .title;
+      font-size: 2rem;
+   }
+}
+p {
+   font-family: $regular-text-font;
+   font-size: $regular-text-font-size;
+   font-weight: normal;
+   &.regular-text-title {
+      font-size: $regular-text-title-font-size;
+      font-weight: bold;
+   }
 }
