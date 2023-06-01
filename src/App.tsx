@@ -3,16 +3,13 @@ import './scss/fonts/Lato/stylesheet.scss'
 import './scss/fonts/Cardo/stylesheet.scss'
 import './scss/index.scss'
 
+import Header from './components/header/index'
 import React from 'react'
 
-const App = () => {
+const App: React.FC = () => {
    return (
-      <div className="App">
-         <button className="btn-primary" style={{ margin: '5px' }}>
-            Contact Us
-         </button>
-         <button className="btn-secondary">Reserve Ticket</button>
-         {/* header */}
+      <div className="App bg-primary">
+         <Header />
          {/* main */}
          {/* footer */}
       </div>

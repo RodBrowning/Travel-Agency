@@ -31,6 +31,15 @@ p {
    }
 }
 
+a {
+   font-family: fonts.$regular-text-font;
+   font-size: sizes.$link-font-size;
+   font-weight: 100;
+   &.active {
+      font-weight: 900;
+   }
+}
+
 .light-text {
    color: colors.$primary-color;
 }

@@ -1,0 +1,15 @@
+@use './variables/colors';
+
+.container {
+   max-width: 1240px;
+   margin: auto;
+}
+
+$padding-values: (2em, 3em, 4em, 5em, 6em);
+
+@each $value in $padding-values {
+   $index: index($padding-values, $value) + 1;
+   .py-#{$index} {
+      padding-block: $value;
+   }
+}
