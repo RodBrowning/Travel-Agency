@@ -1,10 +1,12 @@
 @use './variables/colors';
+@use './variables/sizes';
 
 .btn {
    border: 2px solid colors.$bg-tertiary;
    font-weight: 900;
    border-radius: 4px;
    padding: 10px 40px;
+   font-size: sizes.$button-font-size;
    &-primary {
       @extend .btn;
       background-color: transparent;
