@@ -1,0 +1,12 @@
+@use '../../scss/variables/breakPoints';
+
+@media screen and (max-width: breakPoints.$medium-screen) {
+   #header {
+      .links {
+         gap: 0em;
+         a {
+            width: 100px;
+         }
+      }
+   }
+}

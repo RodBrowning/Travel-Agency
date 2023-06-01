@@ -4,6 +4,9 @@
       display: flex;
       align-items: center;
       gap: 3em;
+      a {
+         width: 100px;
+      }
    }
    .action {
       margin-left: auto;
