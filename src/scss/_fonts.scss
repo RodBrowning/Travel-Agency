@@ -1,6 +1,7 @@
 @use './variables/colors';
 @use './variables/fonts';
 @use './variables/sizes';
+@use './variables/breakPoints';
 
 * {
    font-family: fonts.$regular-text-font;
@@ -10,7 +11,7 @@
    font-weight: bold;
    &-big {
       @extend .title;
-      font-size: 4rem;
+      font-size: 5rem;
    }
    &-medium {
       @extend .title;
@@ -25,6 +26,7 @@ p {
    font-family: fonts.$regular-text-font;
    font-size: sizes.$regular-text-font-size;
    font-weight: normal;
+   line-height: 1.3rem;
    &.regular-text-title {
       font-size: sizes.$regular-text-title-font-size;
       font-weight: bold;
@@ -35,7 +37,11 @@ a {
    font-family: fonts.$regular-text-font;
    font-size: sizes.$link-font-size;
    font-weight: 100;
+   cursor: pointer;
    &.active {
+      font-weight: 900;
+   }
+   &:hover {
       font-weight: 900;
    }
 }
@@ -45,4 +51,14 @@ a {
 }
 .dark-text {
    color: colors.$secondary-color;
+}
+@media screen and (max-width: breakPoints.$large-screen) {
+   .title {
+      font-family: fonts.$heading-font;
+      font-weight: bold;
+      &-big {
+         @extend .title;
+         font-size: 4rem;
+      }
+   }
 }

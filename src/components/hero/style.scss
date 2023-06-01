@@ -1,0 +1,11 @@
+#hero {
+   display: grid;
+   grid-template-columns: auto 2fr;
+   gap: 10em;
+   .heroImage {
+      img {
+         width: auto;
+         object-fit: cover;
+      }
+   }
+}

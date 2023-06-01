@@ -1,4 +1,4 @@
-@use './variables/colors';
+@use './variables/breakPoints';
 
 .container {
    max-width: 1240px;
@@ -8,8 +8,22 @@
 $padding-values: (2em, 3em, 4em, 5em, 6em);
 
 @each $value in $padding-values {
-   $index: index($padding-values, $value) + 1;
+   $index: index($padding-values, $value);
    .py-#{$index} {
       padding-block: $value;
+   }
+}
+
+$margin-values: (15px, 20px, 25px, 30px, 35px);
+@each $value in $margin-values {
+   $index: index($margin-values, $value);
+   .mb-#{$index} {
+      margin-bottom: $value;
+   }
+}
+
+@media screen and (max-width: breakPoints.$large-screen) {
+   .container {
+      max-width: 95vw;
    }
 }
