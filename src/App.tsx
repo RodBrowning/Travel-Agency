@@ -3,6 +3,7 @@ import './scss/fonts/Lato/stylesheet.scss'
 import './scss/fonts/Cardo/stylesheet.scss'
 import './scss/index.scss'
 
+import Cards from './components/cards'
 import Header from './components/header/index'
 import Hero from './components/hero'
 import React from 'react'
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <div className="App bg-primary">
          <Header />
          <Hero />
+         <Cards />
          {/* main */}
          {/* footer */}
       </div>

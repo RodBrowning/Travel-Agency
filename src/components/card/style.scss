@@ -1,0 +1,23 @@
+@use '../../scss/variables/colors';
+
+#card {
+   .cardImage {
+      position: relative;
+      &:before {
+         content: '';
+         position: absolute;
+         height: 3px;
+         width: 50px;
+         border-radius: 15px;
+         left: 0;
+         bottom: 0;
+         background-color: colors.$bg-tertiary;
+      }
+      img {
+         width: 100%;
+      }
+   }
+   p.title-small {
+      width: 70%;
+   }
+}
