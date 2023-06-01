@@ -1,4 +1,5 @@
 import './style.scss'
+import './small-devices.scss'
 
 import React from 'react'
 

@@ -1,0 +1,22 @@
+@use '../../scss/variables/breakPoints';
+
+@media screen and (max-width: breakPoints.$medium-screen) {
+   #cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2em;
+      #card:nth-child(3) {
+         grid-column: 1 / -1;
+         max-width: 50%;
+         margin: auto;
+      }
+   }
+}
+
+@media screen and (max-width: breakPoints.$small-screen) {
+   #cards {
+      grid-template-columns: 1fr;
+      #card:nth-child(3) {
+         max-width: 100%;
+      }
+   }
+}
