@@ -13,8 +13,7 @@ const SliderCard: React.FC<Props> = ({ imgUrl }) => {
          <p className="title-small mb-1">Costomer name</p>
          <p className="lighter-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            iusto non placeat modi beatae sapiente delectus, optio officia iure
-            officiis rem?
+            iusto non placeat modi beatae sapiente delectus, optio officia iure.
          </p>
       </div>
    )
