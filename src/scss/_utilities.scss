@@ -14,7 +14,7 @@ $padding-values: (2em, 3em, 4em, 5em, 6em);
    }
 }
 
-$margin-values: (15px, 20px, 25px, 30px, 35px);
+$margin-values: (15px, 20px, 25px, 30px, 35px, 50px, 100px);
 @each $value in $margin-values {
    $index: index($margin-values, $value);
    .mb-#{$index} {

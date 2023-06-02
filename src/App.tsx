@@ -6,6 +6,7 @@ import './scss/index.scss'
 import Cards from './components/cards'
 import Header from './components/header/index'
 import Hero from './components/hero'
+import ImgText from './components/ImgText'
 import React from 'react'
 
 const App: React.FC = () => {
@@ -14,6 +15,7 @@ const App: React.FC = () => {
          <Header />
          <Hero />
          <Cards />
+         <ImgText />
          {/* main */}
          {/* footer */}
       </div>
