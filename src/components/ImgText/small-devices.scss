@@ -1,0 +1,48 @@
+@use '../../scss/variables/breakPoints';
+
+@media screen and (max-width: breakPoints.$large-screen) {
+   #imgText {
+      .container {
+         grid-template-columns: 1fr 1fr;
+         gap: 2em;
+         .image {
+            margin-right: calc(100% - 50vw);
+            background-position: 100%;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: breakPoints.$medium-screen) {
+   #imgText {
+      .container {
+         grid-template-columns: 1fr;
+         gap: 2em;
+         .title-medium {
+            text-align: center;
+            width: 80%;
+            margin-inline: auto;
+         }
+         .image {
+            height: 375px;
+            margin: auto;
+            width: 80%;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: breakPoints.$small-screen) {
+   #imgText {
+      .container {
+         .title-medium {
+            width: 100%;
+         }
+         .image {
+            height: 300px;
+            margin: auto;
+            width: 100%;
+         }
+      }
+   }
+}
