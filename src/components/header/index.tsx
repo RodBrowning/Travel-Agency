@@ -7,16 +7,16 @@ const Header: React.FC = () => {
    return (
       <header id="header" className="container py-3">
          <div className="links">
-            <a href="#" className="light-text active">
+            <a href="#" className="lighter-text active">
                Home
             </a>
-            <a className="light-text" href="#">
+            <a className="lighter-text" href="#">
                Guides
             </a>
-            <a className="light-text" href="#">
+            <a className="lighter-text" href="#">
                Flights
             </a>
-            <a className="light-text" href="#">
+            <a className="lighter-text" href="#">
                About
             </a>
          </div>

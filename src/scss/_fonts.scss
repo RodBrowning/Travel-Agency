@@ -5,6 +5,7 @@
 
 * {
    font-family: fonts.$regular-text-font;
+   color: colors.$primary-color;
 }
 .title {
    font-family: fonts.$heading-font;
@@ -47,10 +48,13 @@ a {
 }
 
 .light-text {
+   color: colors.$secondary-color;
+}
+.lighter-text {
    color: colors.$tertiary-color;
 }
 .dark-text {
-   color: colors.$secondary-color;
+   color: colors.$primary-color;
 }
 @media screen and (max-width: breakPoints.$large-screen) {
    .title {
