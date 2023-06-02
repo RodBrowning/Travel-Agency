@@ -1,4 +1,5 @@
 import './style.scss'
+import './small-devices.scss'
 import 'swiper/scss'
 import 'swiper/scss/navigation'
 import 'swiper/scss/pagination'
@@ -20,13 +21,21 @@ const Slider: React.FC = () => {
             <Swiper
                modules={[Navigation, Pagination, Scrollbar, A11y]}
                spaceBetween={50}
-               slidesPerView={3}
-               slidesPerGroup={3}
+               slidesPerView={1}
+               slidesPerGroup={1}
                navigation={{ prevEl: '#prevBtn', nextEl: '#nextBtn' }}
                pagination={{ enabled: false }}
                scrollbar={{ draggable: true, hide: true }}
-               onSwiper={(swiper) => console.log(swiper)}
-               onSlideChange={() => console.log('slide change')}
+               breakpoints={{
+                  1000: {
+                     slidesPerView: 3,
+                     slidesPerGroup: 3,
+                  },
+                  640: {
+                     slidesPerView: 2,
+                     slidesPerGroup: 2,
+                  },
+               }}
             >
                <SwiperSlide>
                   <SliderCard imgUrl="/assets/testimonials/person1.png" />

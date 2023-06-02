@@ -1,0 +1,22 @@
+@use '../../scss/variables/breakPoints';
+
+@media screen and (max-width: breakPoints.$large-screen) {
+   #slider {
+      .title-big {
+         width: 80%;
+      }
+      &.container {
+         max-width: 90vw;
+      }
+   }
+}
+@media screen and (max-width: breakPoints.$medium-screen) {
+   #slider {
+      .title-big {
+         width: 95%;
+      }
+      &.container {
+         max-width: 87vw;
+      }
+   }
+}
