@@ -4,14 +4,12 @@
    border: 2px solid colors.$primary-color;
    border-radius: 10px;
    text-align: center;
-   padding-inline: 15px;
+   padding-inline: 30px;
+   flex: 1;
    img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
       object-fit: cover;
    }
-   // p:not(:first-child) {
-   //    color: colors.$secondary-color;
-   // }
 }

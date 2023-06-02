@@ -4,17 +4,23 @@ import React from 'react'
 
 type Props = {
    imgUrl: string
+   costomerName: string
+   testimonial: string
 }
 
-const SliderCard: React.FC<Props> = ({ imgUrl }) => {
+const truncateText = (text: string, maxLength: number): string => {
+   if (text.length > maxLength) {
+      return text.substring(0, maxLength) + '...'
+   }
+   return text
+}
+
+const SliderCard: React.FC<Props> = ({ imgUrl, costomerName, testimonial }) => {
    return (
       <div className="sliderCard py-3">
          <img className="mb-3" src={imgUrl} alt="Costomer image" />
-         <p className="title-small mb-1">Costomer name</p>
-         <p className="lighter-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            iusto non placeat modi beatae sapiente delectus, optio officia iure.
-         </p>
+         <p className="title-small mb-1">{costomerName}</p>
+         <p className="lighter-text">{truncateText(testimonial, 150)}</p>
       </div>
    )
 }
