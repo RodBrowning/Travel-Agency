@@ -23,6 +23,10 @@
       font-size: 2rem;
       line-height: 2rem;
    }
+   &-footer {
+      @extend .title;
+      font-size: 4rem;
+   }
 }
 p {
    font-family: fonts.$regular-text-font;

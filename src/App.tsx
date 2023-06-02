@@ -4,6 +4,7 @@ import './scss/fonts/Cardo/stylesheet.scss'
 import './scss/index.scss'
 
 import Cards from './components/cards'
+import Footer from './components/footer'
 import Header from './components/header/index'
 import Hero from './components/hero'
 import ImgText from './components/ImgText'
@@ -20,8 +21,7 @@ const App: React.FC = () => {
             <ImgText />
             <Slider />
          </main>
-         {/* main */}
-         {/* footer */}
+         <Footer />
       </div>
    )
 }

@@ -1,0 +1,19 @@
+#footer {
+   .footer-div {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      .footer-links .links {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         row-gap: 2em;
+         a {
+            font-weight: 400;
+         }
+      }
+      .footer-copyright {
+         grid-column: 1 / -1;
+         text-align: center;
+         margin-top: 6em;
+      }
+   }
+}
