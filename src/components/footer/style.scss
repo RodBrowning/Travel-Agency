@@ -17,3 +17,41 @@
       }
    }
 }
+
+@media screen and (max-width: 1150px) {
+   #footer {
+      .footer-div {
+         grid-template-columns: 1fr;
+         text-align: center;
+         .footer-heading {
+            margin-bottom: 3em;
+         }
+         .footer-links .links {
+            grid-template-columns: repeat(3, 1fr);
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 950px) {
+   #footer {
+      .footer-div {
+         .footer-links .links {
+            grid-template-columns: repeat(2, 1fr);
+         }
+         .footer-copyright {
+            margin-top: 4em;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 375px) {
+   #footer {
+      .footer-div {
+         .footer-links .links {
+            grid-template-columns: 1fr;
+         }
+      }
+   }
+}
