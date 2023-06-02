@@ -1,0 +1,16 @@
+@use '../../scss/variables/colors';
+
+.sliderCard {
+   border: 2px solid colors.$primary-color;
+   border-radius: 10px;
+   text-align: center;
+   padding-inline: 15px;
+   img {
+      width: 50%;
+      border-radius: 50%;
+      object-fit: cover;
+   }
+   // p:not(:first-child) {
+   //    color: colors.$secondary-color;
+   // }
+}

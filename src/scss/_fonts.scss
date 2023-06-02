@@ -39,16 +39,15 @@ a {
    font-size: sizes.$link-font-size;
    font-weight: 100;
    cursor: pointer;
-   &.active {
-      font-weight: 900;
-   }
+   &.active,
    &:hover {
+      color: colors.$primary-color;
       font-weight: 900;
    }
 }
 
 .light-text {
-   color: colors.$primary-color;
+   color: colors.$tertiary-color;
 }
 .dark-text {
    color: colors.$secondary-color;

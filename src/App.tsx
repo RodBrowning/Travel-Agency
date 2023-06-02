@@ -8,14 +8,18 @@ import Header from './components/header/index'
 import Hero from './components/hero'
 import ImgText from './components/ImgText'
 import React from 'react'
+import Slider from './components/slider'
 
 const App: React.FC = () => {
    return (
       <div className="App bg-primary">
          <Header />
-         <Hero />
-         <Cards />
-         <ImgText />
+         <main>
+            <Hero />
+            <Cards />
+            <ImgText />
+            <Slider />
+         </main>
          {/* main */}
          {/* footer */}
       </div>

@@ -3,7 +3,7 @@ import './small-devices.scss'
 
 import React from 'react'
 
-const ImgText = () => {
+const ImgText: React.FC = () => {
    return (
       <section id="imgText">
          <div className="container py-5">
