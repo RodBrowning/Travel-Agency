@@ -55,7 +55,7 @@ const Slider: React.FC = () => {
             <div className="sliderDiv">
                <Swiper
                   modules={[Navigation, Pagination, Scrollbar, A11y]}
-                  spaceBetween={50}
+                  spaceBetween={25}
                   slidesPerView={1}
                   slidesPerGroup={1}
                   navigation={{ prevEl: '#prevBtn', nextEl: '#nextBtn' }}
