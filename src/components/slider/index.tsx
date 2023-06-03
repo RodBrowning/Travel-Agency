@@ -20,11 +20,20 @@ interface ICostomer {
    id: string
 }
 
+const fetchTertimonials = async ({ queryKey }: any) => {
+   const [, apiEndPoint] = queryKey
+   return await fetchData(apiEndPoint)
+}
+
 const Slider: React.FC = () => {
    const { isLoading, isError, data, error } = useQuery({
-      queryKey: ['testimonials'],
-      queryFn: () =>
-         fetchData('https://6479cbe0a455e257fa63cace.mockapi.io/testimonials'),
+      queryKey: [
+         'testimonials',
+         'https://6479cbe0a455e257fa63cace.mockapi.io/testimonials',
+      ],
+      queryFn: fetchTertimonials,
+      cacheTime: 60,
+      staleTime: 60,
    })
 
    if (isError) {
@@ -37,7 +46,11 @@ const Slider: React.FC = () => {
             Here&apos;s what they have to say...
          </h1>
          {isLoading ? (
-            <div>Loading...</div>
+            <div>
+               <h3 className="title-medium" style={{ textAlign: 'center' }}>
+                  Loading...
+               </h3>
+            </div>
          ) : (
             <div className="sliderDiv">
                <Swiper
@@ -59,19 +72,29 @@ const Slider: React.FC = () => {
                      },
                   }}
                >
-                  {!!data && data.length > 0
-                     ? data.map((costomer: ICostomer) => {
-                          return (
-                             <SwiperSlide key={costomer.id}>
-                                <SliderCard
-                                   imgUrl={costomer.avatar}
-                                   costomerName={costomer.costomer_name}
-                                   testimonial={costomer.testimonial}
-                                />
-                             </SwiperSlide>
-                          )
-                       })
-                     : ''}
+                  {!!data && data.length > 0 ? (
+                     data.map((costomer: ICostomer) => {
+                        return (
+                           <SwiperSlide key={costomer.id}>
+                              <SliderCard
+                                 imgUrl={costomer.avatar}
+                                 costomerName={costomer.costomer_name}
+                                 testimonial={costomer.testimonial}
+                              />
+                           </SwiperSlide>
+                        )
+                     })
+                  ) : (
+                     <div style={{ padding: '50px' }}>
+                        <h3
+                           className="title-small"
+                           style={{ color: 'red', textAlign: 'center' }}
+                        >
+                           Some error occurred. See the console for more
+                           information.
+                        </h3>
+                     </div>
+                  )}
                </Swiper>
                <button id="prevBtn" className="prevBtn">
                   <svg
