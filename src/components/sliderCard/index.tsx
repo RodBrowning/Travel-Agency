@@ -4,7 +4,7 @@ import React from 'react'
 
 type Props = {
    imgUrl: string
-   costomerName: string
+   customerName: string
    testimonial: string
 }
 
@@ -15,11 +15,11 @@ const truncateText = (text: string, maxLength: number): string => {
    return text
 }
 
-const SliderCard: React.FC<Props> = ({ imgUrl, costomerName, testimonial }) => {
+const SliderCard: React.FC<Props> = ({ imgUrl, customerName, testimonial }) => {
    return (
       <div className="sliderCard py-3">
-         <img className="mb-3" src={imgUrl} alt="Costomer image" />
-         <p className="title-small mb-1">{costomerName}</p>
+         <img className="mb-3" src={imgUrl} alt="Customer image" />
+         <p className="title-small mb-1">{customerName}</p>
          <p className="lighter-text">{truncateText(testimonial, 150)}</p>
       </div>
    )

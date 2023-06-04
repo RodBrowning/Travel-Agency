@@ -9,7 +9,7 @@ import Header from './components/header/index'
 import Hero from './components/hero'
 import ImgText from './components/ImgText'
 import React from 'react'
-import Slider from './components/slider'
+import TestimonialsSlider from './components/testimonialsSlider'
 
 const App: React.FC = () => {
    return (
@@ -19,7 +19,7 @@ const App: React.FC = () => {
             <Hero />
             <Cards />
             <ImgText />
-            <Slider />
+            <TestimonialsSlider />
          </main>
          <Footer />
       </div>
