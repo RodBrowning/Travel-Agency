@@ -26,14 +26,14 @@ const fetchTertimonials = async ({ queryKey }: any) => {
 }
 
 const Slider: React.FC = () => {
+   const oneHour = 1 * 3600000
    const { isLoading, isError, data, error } = useQuery({
       queryKey: [
          'testimonials',
          'https://6479cbe0a455e257fa63cace.mockapi.io/testimonials',
       ],
       queryFn: fetchTertimonials,
-      cacheTime: 60,
-      staleTime: 60,
+      staleTime: oneHour,
    })
 
    if (isError) {
