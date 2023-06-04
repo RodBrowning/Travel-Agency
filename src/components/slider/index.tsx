@@ -101,8 +101,8 @@ const Slider: React.FC = () => {
                      id="left-arrow"
                      version="1.0"
                      xmlns="http://www.w3.org/2000/svg"
-                     width="100px"
-                     height="100px"
+                     width="50px"
+                     height="50px"
                      viewBox="0 0 1024.000000 1024.000000"
                      preserveAspectRatio="xMidYMid meet"
                   >
@@ -128,8 +128,8 @@ const Slider: React.FC = () => {
                      id="right-arrow"
                      version="1.0"
                      xmlns="http://www.w3.org/2000/svg"
-                     width="100px"
-                     height="100px"
+                     width="50px"
+                     height="50px"
                      viewBox="0 0 1024.000000 1024.000000"
                      preserveAspectRatio="xMidYMid meet"
                   >
