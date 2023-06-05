@@ -5,7 +5,7 @@
    .container {
       display: grid;
       grid-template-columns: 2fr 3fr;
-      gap: 6em;
+      gap: 5em;
       color: colors.$secondary-color;
       .image {
          margin-right: calc(100% - 56vw);

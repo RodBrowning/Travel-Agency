@@ -14,7 +14,7 @@ const ImgText: React.FC = () => {
                <p className="light-text regular-text-title mb-1">
                   Lorem, ipsum dolor
                </p>
-               <p className="light-text mb-6">
+               <p className="light-text text-justified mb-6">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                   voluptatibus delectus iste tempora minus eius ut reprehenderit
                   molestias natus ad culpa libero, obcaecati repellendus nemo
@@ -23,7 +23,7 @@ const ImgText: React.FC = () => {
                <p className="light-text regular-text-title mb-1">
                   Lorem, ipsum dolor
                </p>
-               <p className="light-text">
+               <p className="light-text text-justified">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                   voluptatibus delectus iste tempora minus eius ut reprehenderit
                   molestias natus ad culpa libero, obcaecati repellendus nemo

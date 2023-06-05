@@ -16,7 +16,7 @@
    }
    &-medium {
       @extend .title;
-      font-size: 3rem;
+      font-size: 3.5rem;
    }
    &-small {
       @extend .title;
@@ -60,6 +60,11 @@ a {
 .dark-text {
    color: colors.$primary-color;
 }
+
+.text-justified {
+   text-align: justify;
+}
+
 @media screen and (max-width: breakPoints.$large-screen) {
    .title {
       font-family: fonts.$heading-font;
