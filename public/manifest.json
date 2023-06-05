@@ -1,6 +1,6 @@
 {
-   "short_name": "React App",
-   "name": "Create React App Sample",
+   "short_name": "Travel Agency App",
+   "name": "Travel Agency",
    "icons": [
       {
          "src": "favicon.ico",
@@ -10,12 +10,12 @@
       {
          "src": "logo192.png",
          "type": "image/png",
-         "sizes": "192x192"
+         "sizes": "192x153"
       },
       {
          "src": "logo512.png",
          "type": "image/png",
-         "sizes": "512x512"
+         "sizes": "512x408"
       }
    ],
    "start_url": ".",
