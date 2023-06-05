@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
                <h3 className="title-footer">My Log Travels</h3>
             </div>
             <div className="footer-links">
-               <p className="title-small mb-6">Quick Links</p>
+               <p className="regular-text-title mb-5">Quick Links</p>
                <div className="links">
                   <a href="#">Home</a>
                   <a href="#">Travels</a>

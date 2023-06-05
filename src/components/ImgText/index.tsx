@@ -11,8 +11,8 @@ const ImgText: React.FC = () => {
                <h2 className="light-text title-medium mb-7">
                   Choose anywhere you&apos;d like to be
                </h2>
-               <p className="light-text title-small mb-3">
-                  Lorem, ipsum dolor.
+               <p className="light-text regular-text-title mb-1">
+                  Lorem, ipsum dolor
                </p>
                <p className="light-text mb-6">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
@@ -20,8 +20,8 @@ const ImgText: React.FC = () => {
                   molestias natus ad culpa libero, obcaecati repellendus nemo
                   rerum quam ducimus, excepturi enim.
                </p>
-               <p className="light-text title-small mb-3">
-                  Lorem, ipsum dolor.
+               <p className="light-text regular-text-title mb-1">
+                  Lorem, ipsum dolor
                </p>
                <p className="light-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
