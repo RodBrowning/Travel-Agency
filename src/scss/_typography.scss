@@ -51,35 +51,40 @@ a {
    }
 }
 
+.dark-text {
+   color: colors.$primary-color;
+}
 .light-text {
    color: colors.$secondary-color;
 }
 .lighter-text {
    color: colors.$tertiary-color;
 }
-.dark-text {
-   color: colors.$primary-color;
-}
 
-.text-justified {
+.justified {
    text-align: justify;
 }
 
 @media screen and (max-width: breakPoints.$large-screen) {
    .title {
-      font-family: fonts.$heading-font;
-      font-weight: bold;
       &-big {
-         @extend .title;
          font-size: 4rem;
       }
    }
 }
 @media screen and (max-width: breakPoints.$small-screen) {
-   .title-big {
-      font-size: 3rem;
-   }
-   .title-medium {
-      font-size: 2.5rem;
+   .title {
+      &-big {
+         font-size: 3.3rem;
+      }
+      &-medium {
+         font-size: 2.7rem;
+      }
+      &-small {
+         font-size: 1.8rem;
+      }
+      &-footer {
+         font-size: 2.5rem;
+      }
    }
 }
