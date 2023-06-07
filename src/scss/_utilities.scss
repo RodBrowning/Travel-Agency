@@ -38,7 +38,7 @@ $margin-values: (15px, 20px, 25px, 30px, 35px, 50px, 100px);
       }
    }
 
-   $margin-values: (15px, 20px, 25px, 30px, 35px, 50px, 60px);
+   $margin-values: (15px, 16px, 20px, 25px, 30px, 40px, 60px);
    @each $value in $margin-values {
       $index: index($margin-values, $value);
       .mb-#{$index} {
