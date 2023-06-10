@@ -46,8 +46,8 @@ const Slider: React.FC<Props> = ({ title, children }) => {
                   id="left-arrow"
                   version="1.0"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="50px"
-                  height="50px"
+                  width="75px"
+                  height="70px"
                   viewBox="0 0 1024.000000 1024.000000"
                   preserveAspectRatio="xMidYMid meet"
                >
@@ -73,8 +73,8 @@ const Slider: React.FC<Props> = ({ title, children }) => {
                   id="right-arrow"
                   version="1.0"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="50px"
-                  height="50px"
+                  width="75px"
+                  height="70px"
                   viewBox="0 0 1024.000000 1024.000000"
                   preserveAspectRatio="xMidYMid meet"
                >
