@@ -48,7 +48,7 @@ const TestimonialsSlider: React.FC = () => {
             ''
          )}
          {!!data && data.length > 0 ? (
-            <Slider title="Here's what they have to say...">
+            <Slider title="Here’s what they have to say...">
                {data.map((customer: ICustomer) => (
                   <SwiperSlide key={customer.id}>
                      <SliderCard

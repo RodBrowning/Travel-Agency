@@ -9,7 +9,7 @@ const ImgText: React.FC = () => {
          <div className="container py-5">
             <div className="text">
                <h2 className="light-text title-medium mb-7">
-                  Choose anywhere you&apos;d like to be
+                  Choose anywhere you’d like to be
                </h2>
                <p className="light-text regular-text-title mb-1">
                   Lorem, ipsum dolor
