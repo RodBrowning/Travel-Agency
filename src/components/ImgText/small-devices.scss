@@ -46,3 +46,13 @@
       }
    }
 }
+
+@media screen and (min-width: 1440px) {
+   #imgText {
+      .container {
+         .image {
+            margin-right: unset;
+         }
+      }
+   }
+}
