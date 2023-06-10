@@ -22,7 +22,7 @@ const Slider: React.FC<Props> = ({ title, children }) => {
          <div className="sliderDiv">
             <Swiper
                modules={[Navigation, Pagination, Scrollbar, A11y]}
-               spaceBetween={25}
+               spaceBetween={23}
                slidesPerView={1}
                slidesPerGroup={1}
                navigation={{ prevEl: '#prevBtn', nextEl: '#nextBtn' }}
