@@ -14,6 +14,9 @@
          grid-column: 1 / -1;
          text-align: center;
          margin-top: 6em;
+         p {
+            font-size: 1.3rem;
+         }
       }
    }
 }
@@ -41,6 +44,9 @@
          }
          .footer-copyright {
             margin-top: 4em;
+            p {
+               font-size: 1.1rem;
+            }
          }
       }
    }
@@ -51,6 +57,11 @@
       .footer-div {
          .footer-links .links {
             grid-template-columns: 1fr;
+         }
+         .footer-copyright {
+            p {
+               font-size: 1rem;
+            }
          }
       }
    }
