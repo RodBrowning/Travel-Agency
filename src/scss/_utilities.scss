@@ -5,7 +5,7 @@
    margin: auto;
 }
 
-$padding-values: (2em, 3em, 4em, 5em, 6em);
+$padding-values: (2em, 3em, 4em, 5em, 6em, 7em);
 
 @each $value in $padding-values {
    $index: index($padding-values, $value);
@@ -29,7 +29,7 @@ $margin-values: (15px, 20px, 25px, 30px, 35px, 50px, 100px);
 }
 
 @media screen and (max-width: breakPoints.$medium-screen) {
-   $padding-values: (1em, 2em, 3em, 4em, 5em);
+   $padding-values: (1em, 2em, 3em, 4em, 5em, 6em);
 
    @each $value in $padding-values {
       $index: index($padding-values, $value);

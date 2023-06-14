@@ -4,13 +4,13 @@ import React from 'react'
 
 const Footer: React.FC = () => {
    return (
-      <footer id="footer" className="bg-secondary py-4">
+      <footer id="footer" className="bg-secondary py-6">
          <div className="footer-div container">
             <div className="footer-heading">
                <h3 className="title-footer">My Log Travels</h3>
             </div>
             <div className="footer-links">
-               <p className="regular-text-title mb-5">Quick Links</p>
+               <p className="regular-text-title mb-6">Quick Links</p>
                <div className="links">
                   <a href="#">Home</a>
                   <a href="#">Travels</a>

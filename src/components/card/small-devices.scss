@@ -1,6 +1,6 @@
 @use '../../scss/variables/breakPoints';
 
-@media screen and (max-width: breakPoints.$medium-screen) {
+@media screen and (max-width: breakPoints.$large-screen) {
    #card {
       p.title-small {
          width: 100%;

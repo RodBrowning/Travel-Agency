@@ -1,7 +1,7 @@
 #footer {
    .footer-div {
       display: grid;
-      grid-template-columns: 300px 1fr;
+      grid-template-columns: 345px 1fr;
       .footer-links .links {
          display: grid;
          grid-template-columns: repeat(4, 1fr);
@@ -13,7 +13,7 @@
       .footer-copyright {
          grid-column: 1 / -1;
          text-align: center;
-         margin-top: 6em;
+         margin-top: 7em;
          p {
             font-size: 1.3rem;
          }
