@@ -12,7 +12,7 @@ type Props = {
 const Card: React.FC<Props> = ({ imgUrl, title, description }) => {
    return (
       <div id="card">
-         <div className="cardImage mb-4">
+         <div className="cardImage mb-3">
             <img src={imgUrl} className="mb-4" alt="Card image" />
          </div>
          <p className="title-small mb-2">{title}</p>

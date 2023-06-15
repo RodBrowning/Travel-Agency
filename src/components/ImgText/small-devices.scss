@@ -2,6 +2,7 @@
 
 @media screen and (max-width: breakPoints.$large-screen) {
    #imgText {
+      padding-block: 0;
       .container {
          grid-template-columns: 1fr 1fr;
          gap: 2em;
@@ -17,7 +18,7 @@
    #imgText {
       .container {
          grid-template-columns: 1fr;
-         gap: 2em;
+         gap: 4em;
          .title-medium {
             text-align: center;
             width: 80%;

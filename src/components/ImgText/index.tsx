@@ -5,8 +5,8 @@ import React from 'react'
 
 const ImgText: React.FC = () => {
    return (
-      <section id="imgText" className="bg-tertiary">
-         <div className="container py-5">
+      <section id="imgText" className="bg-tertiary py-3">
+         <div className="container py-6">
             <div className="text">
                <h2 className="light-text title-medium mb-7">
                   Choose anywhere you’d like to be
