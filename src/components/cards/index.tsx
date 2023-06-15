@@ -11,22 +11,22 @@ const Cards: React.FC = () => {
             imgUrl="/assets/cardImg1.png"
             title="Lorem ipsum dolor sit amet"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            saepe, non reiciendis aliquid corrupti laboriosam consequuntur?
-            Cumque sapiente voluptatum optio."
+            saepe, non reiciendis aliquid corrupti laboriosam consequuntur 
+            Cumque sapiente."
          />
          <Card
             imgUrl="/assets/cardImg2.png"
             title="Lorem ipsum dolor sit amet"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            saepe, non reiciendis aliquid corrupti laboriosam consequuntur?
-            Cumque sapiente voluptatum optio."
+            saepe, non reiciendis aliquid corrupti laboriosam consequuntur 
+            Cumque sapiente."
          />
          <Card
             imgUrl="/assets/cardImg3.png"
             title="Lorem ipsum dolor sit amet"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            saepe, non reiciendis aliquid corrupti laboriosam consequuntur?
-            Cumque sapiente voluptatum optio."
+            saepe, non reiciendis aliquid corrupti laboriosam consequuntur 
+            Cumque sapiente."
          />
       </section>
    )
