@@ -7,6 +7,10 @@
       grid-template-columns: 1fr 54%;
       gap: 6.9em;
       color: colors.$secondary-color;
+      .text p {
+         text-wrap: balance;
+         -webkit-text-stroke: 0.2px;
+      }
       .image {
          margin-right: calc(100% - 56vw);
          background-position: center;
