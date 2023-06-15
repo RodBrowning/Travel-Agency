@@ -16,7 +16,11 @@ const Hero: React.FC = () => {
             <button className="btn-secondary">Reserve Ticket</button>
          </div>
          <div className="heroImage">
-            <img src="/assets/heroImage.png" alt="Hero image" />
+            <img
+               src="/assets/heroImage.png"
+               alt="Hero image"
+               className="image-filter"
+            />
          </div>
       </section>
    )

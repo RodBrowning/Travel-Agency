@@ -5,6 +5,10 @@
    margin: auto;
 }
 
+.image-filter {
+   filter: grayscale(10%) contrast(0.85) brightness(0.9);
+}
+
 $padding-values: (2em, 3em, 4em, 5em, 6em, 7em);
 
 @each $value in $padding-values {

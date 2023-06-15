@@ -31,7 +31,7 @@ const ImgText: React.FC = () => {
                </p>
             </div>
             <div
-               className="image"
+               className="image image-filter"
                style={{ backgroundImage: 'url(/assets/Image.png)' }}
             ></div>
          </div>
