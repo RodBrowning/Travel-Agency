@@ -6,6 +6,7 @@
 * {
    font-family: fonts.$regular-text-font;
    color: colors.$primary-color;
+   text-wrap: balance;
 }
 .title {
    font-family: fonts.$heading-font;
@@ -13,7 +14,7 @@
    -webkit-text-stroke: 1px;
    &-big {
       @extend .title;
-      font-size: 5rem;
+      font-size: 5.2rem;
       -webkit-text-stroke: 2px;
    }
    &-medium {
@@ -33,11 +34,13 @@
 p {
    font-family: fonts.$regular-text-font;
    font-size: sizes.$regular-text-font-size;
-   font-weight: normal;
+   font-weight: 200;
    line-height: 1.3rem;
+   -webkit-text-stroke: 0.2px;
    &.regular-text-title {
       font-size: sizes.$regular-text-title-font-size;
       font-weight: 900;
+      line-height: calc(sizes.$regular-text-title-font-size * 1.2);
    }
 }
 

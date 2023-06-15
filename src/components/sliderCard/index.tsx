@@ -20,7 +20,7 @@ const SliderCard: React.FC<Props> = ({ imgUrl, customerName, testimonial }) => {
       <div className="sliderCard py-3">
          <img className="mb-6" src={imgUrl} alt="Customer image" />
          <p className="regular-text-title mb-2">{customerName}</p>
-         <p className="lighter-text">{truncateText(testimonial, 150)}</p>
+         <p className="lighter-text">{truncateText(testimonial, 100)}</p>
       </div>
    )
 }

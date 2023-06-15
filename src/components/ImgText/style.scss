@@ -4,8 +4,8 @@
    overflow-x: hidden;
    .container {
       display: grid;
-      grid-template-columns: 2fr 3fr;
-      gap: 5em;
+      grid-template-columns: 1fr 54%;
+      gap: 6.9em;
       color: colors.$secondary-color;
       .image {
          margin-right: calc(100% - 56vw);
