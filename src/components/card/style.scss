@@ -20,4 +20,7 @@
    p.title-small {
       width: 70%;
    }
+   p:not(.title-small) {
+      text-align: justify;
+   }
 }
